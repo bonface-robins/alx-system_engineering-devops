@@ -1,2 +1,2 @@
 #!/bin/bash
-path=' readlink -f "${BASH_SOURCE:-$0}"' echo 'the absolute path is' $path
+abspath () { case "$1" in /*)printf "%s\n" "$1";; *)printf "%s\n" "$PWD/$1";; esac; } 
