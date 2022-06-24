@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'the absolute path is,'$PWD 
+echo $PWD 
